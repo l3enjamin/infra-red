@@ -1,0 +1,22 @@
+[package]
+name = "ir-acp"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "ACP v1/v2 Conductor Proxy and Client for Zed, JetBrains, and ACP agents (Ticket IR-401)."
+
+[dependencies]
+agent-client-protocol.workspace = true
+agent-client-protocol-http.workspace = true
+agent-client-protocol-rmcp.workspace = true
+anyhow.workspace = true
+async-trait.workspace = true
+ir-core.workspace = true
+ir-manifest.workspace = true
+ir-runtime.workspace = true
+tokio.workspace = true
+
+[lints]
+workspace = true

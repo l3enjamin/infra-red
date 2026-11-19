@@ -1,0 +1,21 @@
+[package]
+name = "ir-runtime"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Stateful .infrared/ project environments, runtime pinning, and stream-JSON parsing (Ticket IR-203)."
+
+[dependencies]
+anyhow.workspace = true
+async-trait.workspace = true
+ir-core.workspace = true
+ir-sandbox.workspace = true
+ir-secrets.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+
+[lints]
+workspace = true

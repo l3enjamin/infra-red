@@ -1,0 +1,17 @@
+[package]
+name = "ir-resolver"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "PubGrub SAT dependency solver with virtual capability packages (Ticket IR-109)."
+
+[dependencies]
+anyhow.workspace = true
+ir-core.workspace = true
+pubgrub.workspace = true
+semver.workspace = true
+
+[lints]
+workspace = true

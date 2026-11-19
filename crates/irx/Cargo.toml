@@ -1,0 +1,29 @@
+[package]
+name = "irx"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Ephemeral, OS-sandboxed one-shot runner and stateless MCP 2026-07-28 server (`irx`) (Ticket IR-305)."
+
+[[bin]]
+name = "irx"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+ir-core.workspace = true
+ir-manifest.workspace = true
+ir-mcp-server.workspace = true
+ir-runtime.workspace = true
+ir-sandbox.workspace = true
+ir-secrets.workspace = true
+ir-store.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+[lints]
+workspace = true

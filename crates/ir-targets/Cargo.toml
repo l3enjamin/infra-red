@@ -1,0 +1,21 @@
+[package]
+name = "ir-targets"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Declarative IDE & agent config projections, migration, and drift detection (Tickets IR-104, IR-105, IR-106, IR-402)."
+
+[dependencies]
+anyhow.workspace = true
+async-trait.workspace = true
+ir-core.workspace = true
+ir-manifest.workspace = true
+ir-store.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+toml.workspace = true
+
+[lints]
+workspace = true

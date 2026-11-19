@@ -1,0 +1,25 @@
+[package]
+name = "ir-mcp-server"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Stateless MCP 2026-07-28 server exposing irx isolated delegation and catalog discovery (Ticket IR-304)."
+
+[dependencies]
+anyhow.workspace = true
+async-trait.workspace = true
+axum.workspace = true
+ir-core.workspace = true
+ir-runtime.workspace = true
+ir-sandbox.workspace = true
+ir-store.workspace = true
+rmcp.workspace = true
+schemars.workspace = true
+serde.workspace = true
+tempfile.workspace = true
+tokio.workspace = true
+
+[lints]
+workspace = true

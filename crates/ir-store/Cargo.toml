@@ -1,0 +1,24 @@
+[package]
+name = "ir-store"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Versioned global CAS, CoW/hardlink materializer, and Git/MCP Registry fetchers (Tickets IR-103, IR-108)."
+
+[dependencies]
+anyhow.workspace = true
+async-trait.workspace = true
+etcetera.workspace = true
+gix.workspace = true
+ir-core.workspace = true
+reflink-copy.workspace = true
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+url.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,18 @@
+[package]
+name = "ir-secrets"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Zero-disk-leak OS keyring provider and loopback secret-swapping proxy (Tickets IR-201, IR-403)."
+
+[dependencies]
+anyhow.workspace = true
+async-trait.workspace = true
+ir-core.workspace = true
+keyring-core.workspace = true
+zeroize.workspace = true
+
+[lints]
+workspace = true

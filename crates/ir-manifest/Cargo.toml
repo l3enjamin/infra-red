@@ -1,0 +1,21 @@
+[package]
+name = "ir-manifest"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Manifest, lockfile, SKILL.md, and plugin parsing for infra-red (Tickets IR-101, IR-102)."
+
+[dependencies]
+anyhow.workspace = true
+ir-core.workspace = true
+schemars.workspace = true
+semver.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+toml.workspace = true
+toml_edit.workspace = true
+
+[lints]
+workspace = true

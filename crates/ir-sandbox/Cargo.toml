@@ -1,0 +1,19 @@
+[package]
+name = "ir-sandbox"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Cross-platform OS-native sandboxing and atomic process-tree reaping (Tickets IR-301, IR-302, IR-303)."
+
+[dependencies]
+anyhow.workspace = true
+async-trait.workspace = true
+ir-core.workspace = true
+process-wrap.workspace = true
+tempfile.workspace = true
+tokio.workspace = true
+
+[lints]
+workspace = true
