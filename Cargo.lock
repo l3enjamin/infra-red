@@ -2591,7 +2591,9 @@ dependencies = [
  "ir-secrets",
  "ir-store",
  "ir-targets",
+ "tempfile",
  "tokio",
+ "toml",
  "tracing",
  "tracing-subscriber",
 ]
@@ -2652,6 +2654,8 @@ dependencies = [
  "semver",
  "serde",
  "serde_json",
+ "sha2",
+ "tempfile",
  "toml",
  "toml_edit",
 ]
@@ -2735,6 +2739,7 @@ dependencies = [
  "serde",
  "serde_json",
  "sha2",
+ "tempfile",
  "url",
 ]
 
@@ -2749,6 +2754,8 @@ dependencies = [
  "ir-store",
  "serde",
  "serde_json",
+ "tempfile",
+ "tokio",
  "toml",
 ]
 

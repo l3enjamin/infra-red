@@ -4,15 +4,17 @@
 //! Tickets:
 //! - `IR-104`: Claude Code, OpenAI Codex, Google Antigravity adapters + drift tracker
 //! - `IR-105`: VS Code Copilot & Cursor adapters
-//! - `IR-106`: `ir migrate` config importer
+//! - `IR-106`: `ir migrate` config importer & `ir doctor` auditor
 //! - `IR-402`: Zed & JetBrains absolute-path ACP adapters
 
-use ir_core::TargetAdapter;
-use std::sync::Arc;
+pub mod doctor;
+pub mod drift;
+pub mod migrate;
+pub mod projectors;
 
-/// Returns all built-in target adapters matching the enabled target IDs from `infra-red.toml`.
-pub fn resolve_adapters(_enabled: &[String]) -> Vec<Arc<dyn TargetAdapter>> {
-    todo!(
-        "IR-104/IR-105/IR-402: Instantiate ClaudeCode, Codex, Antigravity, VsCode, Cursor, Zed, JetBrains adapters"
-    )
-}
+pub use doctor::{DoctorReport, audit_repository};
+pub use migrate::{MigrateReport, migrate_repository};
+pub use projectors::{
+    AntigravityAdapter, ClaudeCodeAdapter, CodexAdapter, CursorAdapter, ReconcileOptions,
+    VsCodeAdapter, project_manifest_to_targets, resolve_adapters,
+};
