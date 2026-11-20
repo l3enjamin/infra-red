@@ -7,7 +7,9 @@ no-default-features = false
 
 [advisories]
 version = 2
-ignore = []
+ignore = [
+    { id = "RUSTSEC-2026-0543", reason = "Transitive chrono dependency via upstream rmcp/ACP SDKs; unmaintained notice only, no security vulnerability" },
+]
 
 [licenses]
 version = 2
@@ -34,6 +36,7 @@ confidence-threshold = 0.8
 [bans]
 multiple-versions = "allow"
 wildcards = "deny"
+allow-wildcard-paths = true
 highlight = "all"
 
 # Enforce pure-Rust zero-C-linking defaults (use rustls + gix instead of OpenSSL + libgit2).
